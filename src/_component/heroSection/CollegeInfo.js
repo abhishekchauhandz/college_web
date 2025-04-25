@@ -115,8 +115,7 @@ export default function CollegeInfo() {
                         <div className="flex justify-between">
                             <span className="font-medium w-1/2 md:text-[1rem] text-[0.75rem]">Motto -</span>
                             <span className="text-[0.75rem] w-1/2 md:text-[1rem]">&quot;Sapientia est potentia&quot; (Latin)</span>
-                            <span className="text-[0.75rem] w-1/2 md:text-[1rem]">&quot;Sapientia est potentia&quot; (Latin)</span>
-                            <span className="text-[0.75rem] w-1/2 md:text-[1rem]">&quot;Sapientia est potentia&quot; (Latin)</span>
+                           
                         </div>
                     </div>
                 </div>
