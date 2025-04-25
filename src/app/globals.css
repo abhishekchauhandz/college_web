@@ -3,13 +3,20 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
-}
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  /* Custom Color Variables */
+  --primary-blue: #0071E3;
+  --red-accent: #FF5050;
+  --orange-accent: #FF8450;
+  --black: #000000;
+  --cream: #F6FBFF;
+  --deep-orange: #FFAD33;
+  --light-blue: #C8E3FF;
+  --green-accent: #21D67D;
+  --font-family: 'Montserrat', sans-serif;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -22,5 +29,80 @@
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-family);
 }
+
+/* Register custom classes using utility layer */
+@layer utilities {
+  .text-primary-blue {
+    color: var(--primary-blue);
+  }
+
+  .text-red-accent {
+    color: var(--red-accent);
+  }
+
+  .text-orange-accent {
+    color: var(--orange-accent);
+  }
+  .text-green-accent {
+    color: var(--green-accent)
+  }
+
+  .bg-cream {
+    background-color: var(--cream);
+  }
+
+  .bg-light-blue {
+    background-color: var(--light-blue);
+  }
+
+  .bg-deep-orange {
+    background-color: var(--deep-orange);
+  }
+  .bg-gradient-yellow-green {
+    background-image: linear-gradient(90deg, #FFCE16 0%, #31FF9A 100%);
+  }
+
+   /* New gradient color */
+   .bg-gradient-green {
+    background: linear-gradient(90deg, #31FF9A 1.84%, #099852 97.79%);
+  }
+}
+
+@keyframes flipTextY {
+  0%, 100% {
+    transform: rotateY(0deg);
+  }
+  50% {
+    transform: rotateY(180deg);
+  }
+}
+
+.animate-flip-y {
+  display: inline-block;
+  animation: flipTextY 5s infinite ease-in-out;
+  transform-origin: center;
+  transform-style: preserve-3d;
+  backface-visibility: hidden;
+}
+
+@media (min-width: 100px) {
+  ::-webkit-scrollbar {
+    width: 0px;
+    display: none;
+  }
+
+  /* Hide scrollbar for Firefox */
+  * {
+    scrollbar-width: none;
+  }
+
+  /* Hide scrollbar for Edge & IE */
+  *::-ms-scrollbar {
+    display: none;
+  }
+}
+
+
+
