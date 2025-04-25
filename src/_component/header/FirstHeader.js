@@ -16,7 +16,7 @@ const Header = () => {
             {/* Logo + Title */}
             <div className="flex items-center gap-[0.5rem] flex-shrink-0">
                 <Image src="/headerLogo1.png" alt="logo" width={30} height={30} />
-                <h1 className="text-[1.5rem] lg:text-[1.75rem] font-bold text-black dark:text-white whitespace-nowrap">
+                <h1 className="text-[1.5rem] lg:text-[1.75rem] font-bold text-black whitespace-nowrap">
                     Campus <span className="text-primary-blue">Encyclopedia</span>
                 </h1>
             </div>
