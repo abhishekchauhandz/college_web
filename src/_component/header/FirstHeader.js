@@ -11,7 +11,7 @@ const Header = () => {
     const { theme, setTheme } = useTheme();
 
     return (
-        <header className="w-full flex flex-wrap items-center justify-between px-[1rem] py-[0.8rem] lg:flex-nowrap md:px-[3.5rem] bg-white dark:bg-gray-900 lg:gap-2 gap-2">
+        <header className="w-full flex flex-wrap items-center justify-between px-[1rem] py-[0.8rem] lg:flex-nowrap md:px-[3.5rem] bg-white lg:gap-2 gap-2">
 
             {/* Logo + Title */}
             <div className="flex items-center gap-[0.5rem] flex-shrink-0">
